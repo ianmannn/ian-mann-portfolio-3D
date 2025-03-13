@@ -5,12 +5,8 @@ import tailwindcss from '@tailwindcss/vite';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
-    react({
-      babel: {
-        presets: ['babel-preset-react-app'],
-        plugins: [],
-      },
-    }), 
+    react(),
     tailwindcss()
   ],
 });
+
