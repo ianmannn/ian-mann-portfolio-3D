@@ -1,12 +1,12 @@
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import React, { useState } from 'react';
-import Header from './sections/Header.jsx';
-import Hero from './sections/Hero.jsx';
-import AboutMe from './sections/AboutMe.jsx';
-import Skills from './sections/Skills.jsx';
+import Header from './sections/Header';
+import Hero from './sections/Hero';
+import AboutMe from './sections/AboutMe';
+import Skills from './sections/Skills';
 import Portfolio from './sections/Portfolio';
-import ContactMe from './sections/ContactMe.jsx'
+import ContactMe from './sections/ContactMe'
 import CustomCursor from './components/CustomCursor';
 import { CursorContext } from './contexts/CursorContext';
 
