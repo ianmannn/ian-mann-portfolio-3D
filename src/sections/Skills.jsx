@@ -112,6 +112,7 @@ const Skills = () => {
                             
                             key={skill.id}
                             href={skill.link}
+                            target="_blank"
                             onMouseEnter={() => {
                                 updateCursorText('CLICK ><')
                                 setHoveredSkill(skill.title)

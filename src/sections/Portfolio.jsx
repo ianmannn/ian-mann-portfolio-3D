@@ -107,6 +107,7 @@ const Portfolio = () => {
                                     <a
                                         key={experience.id}
                                         href={experience.link}
+                                        target="_blank"
                                         onMouseEnter={() => (updateCursorText('CLICK ><'))}
                                         onMouseLeave={() => (updateCursorText('SCROLL <>'))}
                                         className="bg-bg border-[0.5px] border-white rounded-3xl p-5 mt-6 flex flex-col items-start justify-start relative cursor-pointer 2translate-2 hover:translate-y-2 shadow-white hover:shadow-none hover:border-green-300 transition"
