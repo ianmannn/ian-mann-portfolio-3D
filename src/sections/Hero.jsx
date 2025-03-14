@@ -2,8 +2,9 @@ import React from 'react';
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FiDownload } from "react-icons/fi";
 import { useCursorContext } from "../contexts/CursorContext";
-import { MdWavingHand } from "react-icons/md";
+import { MdWavingHand, MdOutlineWavingHand } from "react-icons/md";
 import { motion } from "framer-motion";
+import { IoHandRightOutline } from "react-icons/io5";
 
 const handWaveAnimation = {
     rotate: [0, 15, 0], // Rotates 15 degrees back and forth
@@ -13,28 +14,27 @@ const handWaveAnimation = {
       repeatType: "reverse", // Reverses back and forth
       ease: "easeInOut",
     },
-  };
-
+};
 
 const Hero = () => {
     const { updateCursorText } = useCursorContext();
-    
+
     console.log(motion);
 
     return (
-        <div className="section-hero-full-container w-full max-w-xl flex flex-col justify-center items-center h-screen mx-auto">
+        <div className="section-hero-full-container w-full max-w-5xl flex flex-col justify-center items-center h-screen mx-auto">
             <div 
                 onMouseEnter={() => updateCursorText('CLICK <>')}
                 onMouseLeave={() => updateCursorText('SCROLL <>')}
-                className="section-hero-container text-center -mt-36 ">
+                className="section-hero-container text-center -mt-36 flex flex-col items-center">
                 <img src="/profpic.png" alt="profilepic" className="section-hero-picture rounded-full w-50 h-50 mx-auto mb-8 border-4 border-white rotate-1" /> 
-                <h3 className="section-hero-greeting text-text font-inter font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl flex items-center gap-2 justify-center w-fit">
-                    Hi, I'm Ian 
+                <h3 className="section-hero-greeting text-text font-knewave text-5xl sm:text-6xl md:text-7xl lg:text-8xl flex items-center gap-2 justify-center w-full lg:ml-10">
+                    Hi, I'm&nbsp; <span className="text-blue1">IAN</span>
                     <motion.div animate={handWaveAnimation}>
-                        <MdWavingHand className="inline-block text-[1em] sm:text-[1em] md:text-[1em] lg:text-[1em] -rotate-20"/>
+                        <IoHandRightOutline className="inline-block text-[1em] sm:text-[2em] md:text-[2em] lg:text-[1.40em] rotate-20"/>
                     </motion.div>
                 </h3>
-                <p className="section-hero-description text-text text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-kaisei mt-3">a full stack developer</p>
+                <p className="section-hero-description text-text text-3xl md:text-5xl lg:text-6xl font-luckiestguy mt-3 text-center">a <span className="text-text lg:text-8xl">full stack</span> developer</p>
                 <div className="section-hero-buttons flex flex-col sm:flex-row gap-4 mt-8 items-center justify-center">
                     <button 
                         onMouseEnter={() => updateCursorText('    ')}

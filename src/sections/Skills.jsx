@@ -72,7 +72,7 @@ const Skills = () => {
     return (
         <section id="Skills" className="section-skills-containter-full w-full min-h-screen scroll-mt-30 py-10 relative ">
             {/* <h4 className="text-center mb-2 text-text text-lg font-inter">What I Work With</h4> */}
-            <h2 className="text-center text-text text-7xl font-mogra">My Skills</h2>
+            <h2 className="text-center text-text text-7xl font-mogra">SKILLS</h2>
             <div className="section-skills-container rounded-3xl mt-10">
                 <div className="section-skills-carousel relative w-full overflow-hidden rounded-xl  bg-primary">
                     <div ref={carouselRef} className="flex whitespace-nowrap text-9xl text-gray-500">
@@ -98,7 +98,7 @@ const Skills = () => {
                                 <div className="p-1 rounded-sm flex items-center justify-center">
                                     {React.createElement(skill.icon, {
                                         className: `transition-transform duration-300 ${
-                                            hoveredSkill === skill.title ? "text-white scale-110" : "text-gray-500 scale-100"
+                                            hoveredSkill === skill.title ? "text-white scale-130" : "text-gray-500 scale-100"
                                         }`,
                                     })}
                                 </div>
