@@ -29,12 +29,12 @@ const Hero = () => {
                 className="section-hero-container text-center -mt-36 flex flex-col items-center">
                 <img src="/profpic.png" alt="profilepic" className="section-hero-picture rounded-full w-50 h-50 mx-auto mb-8 border-4 border-white rotate-1" /> 
                 <h3 className="section-hero-greeting text-text font-knewave text-5xl sm:text-6xl md:text-7xl lg:text-8xl flex items-center gap-2 justify-center w-full lg:ml-10">
-                    Hi, I'm&nbsp; <span className="text-blue1">IAN</span>
+                    Hi, I'm&nbsp; <span className="text-[#3772ff]">IAN</span>
                     <motion.div animate={handWaveAnimation}>
                         <IoHandRightOutline className="inline-block text-[1em] sm:text-[2em] md:text-[2em] lg:text-[1.40em] rotate-20"/>
                     </motion.div>
                 </h3>
-                <p className="section-hero-description text-text text-3xl md:text-5xl lg:text-6xl font-luckiestguy mt-3 text-center">a <span className="text-text lg:text-8xl">full stack</span> developer</p>
+                <p className="section-hero-description text-text text-3xl md:text-5xl lg:text-6xl font-luckiestguy mt-3 text-center">a <span className="text-[#28965a] lg:text-8xl ">full stack</span> developer</p>
                 <div className="section-hero-buttons flex flex-col sm:flex-row gap-4 mt-8 items-center justify-center">
                     <button 
                         onMouseEnter={() => updateCursorText('    ')}

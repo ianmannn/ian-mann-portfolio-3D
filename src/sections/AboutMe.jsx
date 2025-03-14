@@ -62,7 +62,7 @@ const { updateCursorText } = useCursorContext();
     return (
         <section id="AboutMe" className="section-aboutme-fullcontainer w-full px-[10%] py-10 scroll-mt-20">
             {/* <h4 className="text-center mb-2 text-text text-lg font-inter">Introduction</h4> */}
-            <h2 className="text-center text-text text-7xl font-permanentmarker italic font-bold">A LITTLE ABOUT ME</h2>
+            <h2 className="text-center text-text text-6xl font-permanentmarker italic font-bold">A LITTLE ABOUT ME</h2>
             
             <div className="section-aboutme-container flex w-full flex-col lg:flex-row items-center gap-20 my-20 ">  
                 <div className="section-aboutmeleft bg-primary w-81 h-130 rounded-3xl sm:w-96 sm:h-150">

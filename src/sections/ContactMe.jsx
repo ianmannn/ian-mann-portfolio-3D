@@ -1,6 +1,9 @@
 import { LuHandshake } from "react-icons/lu";
+import { useCursorContext } from "../contexts/CursorContext"
 
 const ContactMe = () => {
+
+    const { updateCursorText } = useCursorContext();
     return (
         <section id="Contact" className="section-contact-container-full min-h-screen w-full flex flex-cols-1 justify-center items-center">
             <div className="section-contact-container w-full max-w-5xl flex justify-center items-center text-center px-4">
@@ -11,6 +14,8 @@ const ContactMe = () => {
                     Contact Me:
                     </div>
                     <a 
+                        onMouseEnter={() => updateCursorText('CLICK ><')}
+                        onMouseLeave={() => updateCursorText('SCROLL <>')}
                         className="text-3xl font-dmserif font-light cursor-pointer"
                         href="mailto:iancmann99@gmail.com"
                     >

@@ -148,7 +148,9 @@ const Portfolio = () => {
               <a
                 key={project.id}
                 href={project.link}
-                className="flex flex-col p-6 border-[0.5px] border-white bg-inherit backdrop-blur-md mt-3 rounded-lg justify-center cursor-pointer -translate-y-2 hover:border-blue-400 hover:translate-y-2 hover:shadow-none transition-transform w-full"
+                onMouseEnter={() => updateCursorText('CLICK ><')}
+                onMouseLeave={() => updateCursorText('SCROLL <>')}
+                className="flex flex-col p-6 border-[0.5px] border-white bg-inherit backdrop-blur-md mt-3 rounded-lg justify-center cursor-pointer  hover:border-blue-400 hover:-translate-y-2 hover:shadow-none transition-transform w-full"
               >
                 <img
                   src={project.logo}
