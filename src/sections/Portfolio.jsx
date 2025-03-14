@@ -156,7 +156,7 @@ const Portfolio = () => {
                   src={project.logo}
                   className="h-30 w-30 border-[0.5px] self-center border-black rounded-lg"
                 />
-                <h3 className="text-gray-400 mt-3 text-xl font-inter font-semibold max-sm:text-sm">
+                <h3 className="text-gray-400 mt-3 text-2xl font-poppins font-semibold max-sm:text-sm">
                   {project.title}
                 </h3>
                 <h4 className="text-text2 mt-1 text-sm font-inter">

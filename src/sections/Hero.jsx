@@ -43,13 +43,15 @@ const Hero = () => {
                             Contact Me
                         <FaArrowRightLong className="flex w-5 h-5"></FaArrowRightLong>
                     </button>
-                    <button 
+                    <a 
+                        href= "./ianmannresume.pdf"
+                        target="_blank"
                         onMouseEnter={() => updateCursorText('    ')}
                         onMouseLeave={() => updateCursorText('CLICK ><')}
                         className="font-inter bg-bg text-white w-40 h-13 rounded-full flex items-center justify-center gap-1 cursor-pointer border-1 hover:bg-white transition hover:text-black hover:scale-110">
                         Resume
                         <FiDownload className="flex w-5 h-5"></FiDownload>
-                    </button>
+                    </a>
                 </div>
                 <div className="flex flex-row gap-4 justify-center mt-8">
                     <button className="bg-primary text-text w-10 h-10 rounded-sm">
