@@ -39,9 +39,49 @@
   --color-secondary: #2b6cb0;
   --color-primary2: #1d1e24;
   --color-green1: #63a375;
-  --color-blue1: #427aa1;
-  --color-blue2: #0e6ba8;
-  --color-blue3: #3772ff;
+  --bg-translucent: "linear-gradient(to bottom, hsla(0, 0%, 100%, 0.05), transparent 20%)";
+
+  --color-lowContrast: #000;
+  --color-highContrast: #fff;
+  --color-gray1: #161616;
+  --color-gray2: #1c1c1c;
+  --color-gray3: #232323;
+  --color-gray4: #282828;
+  --color-gray5: #2e2e2e;
+  --color-gray6: #343434;
+  --color-gray7: #3e3e3e;
+  --color-gray8: #505050;
+  --color-gray9: #707070;
+  --color-gray10: #7e7e7e;
+  --color-gray11: #a0a0a0;
+  --color-gray12: #ededed;
+  --color-grayA1: hsla(0, 0%, 100%, 0);
+  --color-grayA2: hsla(0, 0%, 100%, .026);
+  --color-grayA3: hsla(0, 0%, 100%, .056);
+  --color-grayA4: hsla(0, 0%, 100%, .077);
+  --color-grayA5: hsla(0, 0%, 100%, .103);
+  --color-grayA6: hsla(0, 0%, 100%, .129);
+  --color-grayA7: hsla(0, 0%, 100%, .172);
+  --color-grayA8: hsla(0, 0%, 100%, .249);
+  --color-grayA9: hsla(0, 0%, 100%, .386);
+  --color-grayA10: hsla(0, 0%, 100%, .446);
+  --color-grayA11: hsla(0, 0%, 100%, .592);
+  --color-grayA12: hsla(0, 0%, 100%, .923);
+  --color-blue1: #0f1720;
+  --color-blue2: #0f1b2d;
+  --color-blue3: #10243e;
+  --color-blue4: #102a4c;
+  --color-blue5: #0f3058;
+  --color-blue6: #0d3868;
+  --color-blue7: #0a4481;
+  --color-blue8: #0954a5;
+  --color-blue9: #0091ff;
+  --color-blue10: #369eff;
+  --color-blue11: #52a9ff;
+  --color-blue12: #eaf6ff;
+
+
+  
 
 
   --shadow-white:4px 4px 0 #b3b3b3;

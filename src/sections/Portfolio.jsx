@@ -112,7 +112,7 @@ const Portfolio = () => {
                   target="_blank"
                   onMouseEnter={() => updateCursorText('CLICK ><')}
                   onMouseLeave={() => updateCursorText('SCROLL <>')}
-                  className="bg-bg border-[0.5px] border-white rounded-lg p-5 mt-6 flex flex-col items-start justify-start relative cursor-pointer 2translate-2 hover:translate-y-2 shadow-white hover:shadow-none hover:border-green-300 transition"
+                  className="bg-gradient-to-b from-white/5 to-transparent border-[0.5px] border-gray-800 rounded-lg p-5 mt-6 flex flex-col items-start justify-start relative cursor-pointer  hover:-translate-y-2 hover:border-green-300 transition"
                 >
                   <img
                     src={experience.logo}
@@ -150,13 +150,13 @@ const Portfolio = () => {
                 href={project.link}
                 onMouseEnter={() => updateCursorText('CLICK ><')}
                 onMouseLeave={() => updateCursorText('SCROLL <>')}
-                className="flex flex-col p-6 border-[0.5px] bg-primary backdrop-blur-md  rounded-sm justify-center cursor-pointer  hover:border-blue-400 hover:-translate-y-2 hover:shadow-none transition-transform w-full"
+                className="flex flex-col p-6 border-[0.5px] border-gray-800 bg-gradient-to-b from-white/5 to-transparent  rounded-xl justify-center cursor-pointer  hover:border-blue-400 hover:-translate-y-2 hover:shadow-none transition-transform w-full"
               >
                 <img
                   src={project.logo}
-                  className="h-30 w-30 border-[0.5px] self-center border-black rounded-lg"
+                  className="h-30 w-30 border-[0.5px] border-black rounded-lg"
                 />
-                <h3 className="text-gray-400 mt-3 text-2xl font-poppins font-semibold max-sm:text-sm">
+                <h3 className="text-text mt-3 text-xl font-poppins font-light max-sm:text-sm">
                   {project.title}
                 </h3>
                 <h4 className="text-text2 mt-1 text-sm font-inter">

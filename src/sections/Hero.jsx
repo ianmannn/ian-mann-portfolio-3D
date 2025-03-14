@@ -36,13 +36,14 @@ const Hero = () => {
                 </h3>
                 <p className="section-hero-description text-text text-3xl md:text-5xl lg:text-6xl font-luckiestguy mt-3 text-center">a <span className="text-[#28965a] lg:text-8xl ">full stack</span> developer</p>
                 <div className="section-hero-buttons flex flex-col sm:flex-row gap-4 mt-8 items-center justify-center">
-                    <button 
+                    <a 
+                        href="#Contact"
                         onMouseEnter={() => updateCursorText('    ')}
                         onMouseLeave={() => updateCursorText('CLICK ><')}
                         className="font-inter border-1 bg-bg text-text w-40 h-13 rounded-full flex items-center justify-center gap-2 cursor-pointer hover:bg-white transition hover:text-black hover:scale-110">
                             Contact Me
                         <FaArrowRightLong className="flex w-5 h-5"></FaArrowRightLong>
-                    </button>
+                    </a>
                     <a 
                         href= "./ianmannresume.pdf"
                         target="_blank"
