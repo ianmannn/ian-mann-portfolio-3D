@@ -139,7 +139,7 @@ const Portfolio = () => {
             Projects
           </div>
           <div
-            className="section-portfolio-right-container grid grid-cols-2 justify-center gap-10 items-stretch w-full"
+            className="section-portfolio-right-container grid grid-cols-2 justify-center gap-2 items-stretch w-full"
             style={{
               height: projectsHeight ? `${projectsHeight * 0.5}px` : 'auto',
             }}
@@ -150,13 +150,13 @@ const Portfolio = () => {
                 href={project.link}
                 onMouseEnter={() => updateCursorText('CLICK ><')}
                 onMouseLeave={() => updateCursorText('SCROLL <>')}
-                className="flex flex-col p-6 border-[0.5px] border-white bg-inherit backdrop-blur-md mt-3 rounded-lg justify-center cursor-pointer  hover:border-blue-400 hover:-translate-y-2 hover:shadow-none transition-transform w-full"
+                className="flex flex-col p-6 border-[0.5px] bg-primary backdrop-blur-md  rounded-sm justify-center cursor-pointer  hover:border-blue-400 hover:-translate-y-2 hover:shadow-none transition-transform w-full"
               >
                 <img
                   src={project.logo}
                   className="h-30 w-30 border-[0.5px] self-center border-black rounded-lg"
                 />
-                <h3 className="text-text mt-3 text-xl font-inter font-semibold max-sm:text-sm">
+                <h3 className="text-gray-400 mt-3 text-xl font-inter font-semibold max-sm:text-sm">
                   {project.title}
                 </h3>
                 <h4 className="text-text2 mt-1 text-sm font-inter">
