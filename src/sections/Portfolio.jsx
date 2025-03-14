@@ -86,23 +86,23 @@ const Portfolio = () => {
   return (
     <section
       id="Portfolio"
-      className="section-portfolio-container-full py-10 relative min-h-screen"
+      className="section-portfolio-container-full py-10 relative rounded-3xl min-h-screen "
     >
       <h2 className="section-portfolio-h2 text-center text-text text-6xl font-shrikhand">
         PORTFOLIO
       </h2>
 
       <div className="section-portfolio-container flex flex-col lg:flex-row w-full p-6 gap-10 relative">
-        <div className="section-portfolio-left-container relative flex justify-center w-full lg:w-1/2">
+        <div className="section-portfolio-left-container relative flex justify-center w-full lg:w-1/2 ">
           <img
             src={ExperienceRuler}
-            className="section-portfolio-left-experience-ruler absolute left-0 transform -translate-x-1/2 max-sm:mt-20 mt-25 md:mt-22 lg:mt-22"
+            className="section-portfolio-left-experience-ruler absolute left-0 transform -translate-x-1/2 max-sm:mt-16 md:mt-18 lg:mt-18"
             style={{ height: rulerHeight ? `${rulerHeight}px` : 'auto' }}
             alt="Experience Ruler"
           />
           <div className="section-portfolio-left-container-full w-10/12">
             <div className="section-portfolio-left-experience-title flex justify-center text-text text-4xl mb-4 font-kanit">
-              Experience
+              EXPERIENCE
             </div>
             <div ref={experienceContainerRef}>
               {experienceList.map((experience) => (
@@ -112,7 +112,8 @@ const Portfolio = () => {
                   target="_blank"
                   onMouseEnter={() => updateCursorText('CLICK ><')}
                   onMouseLeave={() => updateCursorText('SCROLL <>')}
-                  className="bg-gradient-to-b from-white/5 to-transparent border-[0.5px] border-gray-800 rounded-lg p-5 mt-6 flex flex-col items-start justify-start relative cursor-pointer  hover:-translate-y-2 hover:border-green-300 transition"
+                  className="bg-gradient-to-b from-white/10 to-white/7 border-[2px] border-gray6 rounded-md p-5 mt-5 flex flex-col items-start justify-start relative cursor-pointer hover:scale-105 hover:border-green-300 transition"
+                  style={{ transformOrigin: 'top' }}
                 >
                   <img
                     src={experience.logo}
@@ -136,10 +137,10 @@ const Portfolio = () => {
 
         <div className="section-portfolio-right-container-full w-full lg:w-1/2 flex flex-col justify-center">
           <div className="section-portfolio-right-projects-title flex justify-center items-center text-text text-4xl mb-4 font-kanit">
-            Projects
+            PROJECTS
           </div>
           <div
-            className="section-portfolio-right-container grid grid-cols-2 justify-center gap-2 items-stretch w-full"
+            className="section-portfolio-right-container grid grid-cols-2 justify-center gap-4 items-stretch w-full"
             style={{
               height: projectsHeight ? `${projectsHeight * 0.5}px` : 'auto',
             }}
@@ -150,7 +151,8 @@ const Portfolio = () => {
                 href={project.link}
                 onMouseEnter={() => updateCursorText('CLICK ><')}
                 onMouseLeave={() => updateCursorText('SCROLL <>')}
-                className="flex flex-col p-6 border-[0.5px] border-gray-800 bg-gradient-to-b from-white/5 to-transparent  rounded-xl justify-center cursor-pointer  hover:border-blue-400 hover:-translate-y-2 hover:shadow-none transition-transform w-full"
+                className="flex flex-col p-6 border-[2px] border-gray6 bg-gradient-to-b from-white/10 to-white/7  rounded-sm justify-center cursor-pointer  hover:border-blue-400 hover:scale-102 hover:shadow-none transition-transform w-full"
+                style={{ transformOrigin: 'top' }}
               >
                 <img
                   src={project.logo}
