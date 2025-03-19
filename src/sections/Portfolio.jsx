@@ -7,6 +7,7 @@ import ComingSoonLogo from '../assets/comingsoonlogo2.jpg';
 import LunchBoxLogo from '../assets/lunchboxlogomedium.jpg';
 import SurpriseLogo from '../assets/surpriselogoblue.png';
 import { useCursorContext } from '../contexts/CursorContext';
+import LetterGlitch from '../components/LetterGlitch.jsx';
 
 const experienceList = [
   {
@@ -86,14 +87,21 @@ const Portfolio = () => {
   return (
     <section
       id="Portfolio"
-      className="section-portfolio-container-full py-10 relative rounded-3xl min-h-screen "
+      className="section-portfolio-container-full py-10 relative rounded-3xl min-h-screen"
     >
-      <h2 className="section-portfolio-h2 text-center text-text text-6xl font-shrikhand">
+      <div className="absolute inset-0 z-0">
+        {/* <LetterGlitch
+          glitchSpeed={50}
+          centerVignette={true}
+          outerVignette={true}
+          smooth={true}
+        /> */}
+      </div>
+      <h2 className="section-portfolio-h2 text-center text-text text-5xl lg:text-6xl font-shrikhand relative z-10">
         PORTFOLIO
       </h2>
-
-      <div className="section-portfolio-container flex flex-col lg:flex-row w-full p-6 gap-10 relative">
-        <div className="section-portfolio-left-container relative flex justify-center w-full lg:w-1/2 ">
+      <div className="section-portfolio-container flex flex-col lg:flex-row w-full p-6 gap-10 relative z-10">
+        <div className="section-portfolio-left-container relative flex justify-center w-full lg:w-1/2">
           <img
             src={ExperienceRuler}
             className="section-portfolio-left-experience-ruler absolute left-0 transform -translate-x-1/2 max-sm:mt-16 md:mt-18 lg:mt-18"
