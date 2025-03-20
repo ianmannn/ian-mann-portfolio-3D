@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion";
 import codeIcon from "../assets/code-icon-dark.png";
 import eduIcon from "../assets/edu-icon-dark.png";
 import projIcon from "../assets/project-icon-dark.png";
@@ -59,10 +60,38 @@ const { updateCursorText } = useCursorContext();
         }
     ]
 
+    console.log(motion);
+
     return (
         <section id="AboutMe" className="section-aboutme-fullcontainer w-full px-[10%] py-10 scroll-mt-20">
-            {/* <h4 className="text-center mb-2 text-text text-lg font-inter">Introduction</h4> */}
-            <h2 className="text-center text-text text-6xl font-permanentmarker font-bold">ABOUT ME</h2>
+             <div className="relative w-fit mx-auto overflow-hidden">
+                {/* Left Panel */}
+                <motion.div
+                    initial={{ x: 0 }}
+                    whileInView={{ x: "-100%" }}
+                    transition={{ duration: 1, ease: "easeInOut" }}
+                    viewport={{ once: false }}
+                    className="absolute left-0 top-0 h-full w-full bg-gray-950"
+                />
+                {/* Right Panel */}
+                <motion.div
+                    initial={{ x: 0 }}
+                    whileInView={{ x: "100%" }}
+                    transition={{ duration: 1, ease: "easeInOut" }}
+                    viewport={{ once: false }}
+                    className="absolute right-0 top-0 h-full w-full bg-gray-950"
+                />
+                {/* Title Text with Fade & Scale */}
+                <motion.h2
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 0.8, duration: 0.6, ease: "easeOut" }}
+                    viewport={{ once: false }}
+                    className="relative text-center text-text text-6xl font-permanentmarker font-bold"
+                >
+                    ABOUT ME
+                </motion.h2>
+            </div>
             
             <div className="section-aboutme-container flex w-full flex-col lg:flex-row items-center gap-20 my-20 ">  
                 <div className="section-aboutmeleft bg-primary w-81 h-130 rounded-3xl sm:w-96 sm:h-150">
