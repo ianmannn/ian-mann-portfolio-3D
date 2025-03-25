@@ -33,6 +33,7 @@ const Hero = () => {
                     initial={{scale: 0}}
                     whileInView={{scale: 1}}
                     transition={{duration: 0.8, type: 'spring', stiffness: 100}}
+                    viewport={{ once: true }}
                 >
                     <img src="/profpic.png" alt="profilepic" className="section-hero-picture rounded-full w-40 h-40 mx-auto mt-10 mb-8 border-4 sm:w-50 sm:h-50 border-white rotate-1" /> 
                 </motion.div>
@@ -40,8 +41,9 @@ const Hero = () => {
                     initial={{y: -20, opacity: 0}}
                     whileInView={{y: 0, opacity: 1}}
                     transition={{duration: 1.2, delay: 0.3}}
+                    viewport={{ once: true }}
                     className="section-hero-greeting text-text font-knewave text-5xl sm:text-6xl md:text-7xl lg:text-8xl flex items-center gap-2 justify-center w-full lg:ml-10">
-                    Hi, I'm&nbsp; <span className="text-blue-600">IAN</span>
+                    Hi, I'm&nbsp; <span className="text-blue-400">IAN</span>
                     <motion.div animate={handWaveAnimation}>
                         <IoHandRightOutline className="inline-block text-[1em] sm:text-[2em] md:text-[2em] lg:text-[1.40em] rotate-20"/>
                     </motion.div>
@@ -50,15 +52,17 @@ const Hero = () => {
                     initial={{y: -30, opacity: 0}}
                     whileInView={{y: 0, opacity: 1}}
                     transition={{duration: 1.1, delay: 0.5}}
+                    viewport={{ once: true }}
                     className="section-hero-description text-text text-3xl md:text-5xl lg:text-6xl font-luckiestguy mt-3 text-center"
                 >
-                    a <span className="text-text lg:text-8xl ">full stack</span> developer
+                    a <span className="text-green-300 lg:text-8xl ">full stack</span> developer
                 </motion.p>
                 <div className="section-hero-buttons flex flex-col sm:flex-row gap-4 mt-8 items-center justify-center">
                     <motion.a 
                         initial={{opacity: 0}}
                         whileInView={{opacity: 1}}
                         transition={{duration: 0.6, delay: 1.3}}
+                        viewport={{ once: true }}
                         href="#Contact"
                         onMouseEnter={() => updateCursorText('    ')}
                         onMouseLeave={() => updateCursorText('CLICK ><')}
@@ -70,6 +74,7 @@ const Hero = () => {
                         initial={{opacity: 0}}
                         whileInView={{opacity: 1}}
                         transition={{duration: 0.6, delay: 1.6}}
+                        viewport={{ once: true }}
                         href= "./ianmannresume.pdf"
                         target="_blank"
                         onMouseEnter={() => updateCursorText('    ')}
@@ -83,6 +88,7 @@ const Hero = () => {
                     initial={{y: 30, opacity: 0}}
                     whileInView={{y:0, opacity: 1}}
                     transition={{duration: 0.6, delay: 2}}
+                    viewport={{ once: true }}
                     className="flex flex-row gap-4 justify-center mt-8">
                     <button className="bg-primary text-text w-10 h-10 rounded-sm">
                         <img src="/githubicon.png" alt="github" />
