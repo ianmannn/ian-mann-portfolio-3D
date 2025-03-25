@@ -41,7 +41,7 @@ const Hero = () => {
                     whileInView={{y: 0, opacity: 1}}
                     transition={{duration: 1.2, delay: 0.3}}
                     className="section-hero-greeting text-text font-knewave text-5xl sm:text-6xl md:text-7xl lg:text-8xl flex items-center gap-2 justify-center w-full lg:ml-10">
-                    Hi, I'm&nbsp; <span className="text-text">IAN</span>
+                    Hi, I'm&nbsp; <span className="text-blue-600">IAN</span>
                     <motion.div animate={handWaveAnimation}>
                         <IoHandRightOutline className="inline-block text-[1em] sm:text-[2em] md:text-[2em] lg:text-[1.40em] rotate-20"/>
                     </motion.div>
