@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import codeIcon from "../assets/code-icon-dark.png";
 import eduIcon from "../assets/edu-icon-dark.png";
@@ -10,6 +11,11 @@ import postmanIcon from "../assets/postman.png";
 import dockerIcon from "../assets/docker.png";
 import openAIIcon from "../assets/openailogo.png";
 import { useCursorContext } from '../contexts/CursorContext';
+import { Canvas } from  "@react-three/fiber"
+import { Center } from "@react-three/drei";
+import { CanvasLoader } from '../components/Loading.jsx';
+import DemoComputer from '../components/DemoComputer.jsx';
+import { OrbitControls } from '@react-three/drei';
 
 const AboutMe = () => {
 
@@ -65,11 +71,9 @@ const { updateCursorText } = useCursorContext();
         {
             title: "Docker",
             icon: dockerIcon,
-            delay: 3.5,
+            delay: 3.7,
         }
     ]
-
-    console.log(motion);
 
     return (
         <section id="AboutMe" className="section-aboutme-fullcontainer w-full px-[10%] py-10 scroll-mt-20">
@@ -87,6 +91,23 @@ const { updateCursorText } = useCursorContext();
             
             <div className="section-aboutme-container flex w-full flex-col lg:flex-row items-center gap-20 my-20 ">  
                 <div className="section-aboutmeleft bg-primary w-81 h-130 rounded-3xl sm:w-96 sm:h-150">
+                    <Canvas camera={{ position: [0, 0, 5], fov: 45 }}>
+                        <ambientLight intensity={0.5} />
+                        <directionalLight position={[5, 5, 5]} />
+
+                        <Suspense fallback={<CanvasLoader />}>
+                            <Center>
+                            <DemoComputer />
+                            </Center>
+                        </Suspense>
+
+                        <OrbitControls
+                            enableZoom={false} // optional: lock zoom
+                            enablePan={false}  // optional: lock panning
+                            autoRotate={false} // optional: set true if you want idle spin
+                        />
+                    </Canvas>
+
                 </div>
                 <div className="section-aboutme-right flex-1"> 
                     <motion.p 
@@ -101,7 +122,8 @@ const { updateCursorText } = useCursorContext();
                     </motion.p>
                     <ul className="section-aboutme-right-middle grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
                         {infoList.map(({ icon, title, description, delaytime }, index) => (
-                            <motion.li key={index} 
+                            <motion.li 
+                                key={`info-${index}`} 
                                 initial={{ opacity: 0}}
                                 whileInView={{ opacity: 1}}
                                 transition={{ delay: delaytime, duration: 1,}}
@@ -124,13 +146,14 @@ const { updateCursorText } = useCursorContext();
                     <ul className="flex items-center gap-3 sm:gap-5">
                         {toolsList.map(({ icon, delay }, index) => (
                             <motion.li 
+                                key={`tool-${index}`} 
                                 initial={{ opacity: 0}}
                                 whileInView={{ opacity: 1}}
                                 transition={{ delay: delay, duration: 1,}}
                                 viewport={{ once: true }}
                                 onMouseEnter={() => updateCursorText('  ')}
                                 onMouseLeave={() => updateCursorText('SCROLL <>')}
-                                key={index} className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                                className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
                                 <img src={icon} alt='Tool' className='w-5 sm:w-7'/>
                             </motion.li>
                         ))}
