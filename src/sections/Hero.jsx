@@ -3,6 +3,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { FiDownload } from "react-icons/fi";
 import { useCursorContext } from "../contexts/CursorContext";
 import { MdWavingHand, MdOutlineWavingHand } from "react-icons/md";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { IoHandRightOutline } from "react-icons/io5";
 import LetterGlitch from '../components/LetterGlitch'
@@ -20,7 +21,7 @@ const handWaveAnimation = {
 const Hero = () => {
     const { updateCursorText } = useCursorContext();
 
-    console.log(motion);
+    // console.log(motion);
 
     return (
         <div className="section-hero-full-container w-full max-w-5xl flex flex-col justify-center items-center h-screen mx-auto">

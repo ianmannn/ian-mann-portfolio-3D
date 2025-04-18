@@ -25,14 +25,14 @@ const skills = [
     { id: 14, title: "Vercel", icon: IoLogoVercel, link: "https://vercel.com/" },
     { id: 15, title: "Supabase", icon: RiSupabaseFill, link: "https://supabase.com/" },
     { id: 16, title: "Tailwind CSS", icon: RiTailwindCssFill, link: "https://tailwindcss.com/" },
-    { id: 16, title: "Framer", icon: SiFramer, link: "https://www.framer.com/?utm_source=google&utm_medium=adwords&utm_campaign=22230540905_171781588221&gad_source=1&gclid=CjwKCAjwp8--BhBREiwAj7og1ws5kztS9e-c7Vd3Up2f4QxO_0HFrNvf5wdhEPe6UItcMTHi2CHmzxoCBakQAvD_BwE" },
-    { id: 17, title: "CSS3", icon: FaCss3Alt, link: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
-    { id: 18, title: "SASS", icon: FaSass, link: "https://sass-lang.com/" },
-    { id: 19, title: "HTML5", icon: FaHtml5, link: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
-    { id: 20, title: "Redux", icon: SiRedux, link: "https://redux.js.org/" },
-    { id: 21, title: "Vite", icon: SiVite, link: "https://vitejs.dev/" },
-    { id: 22, title: "Jira", icon: SiJira, link: "https://www.atlassian.com/software/jira" },
-    { id: 23, title: "WordPress", icon: FaWordpress, link: "https://wordpress.org/" },
+    { id: 17, title: "Framer", icon: SiFramer, link: "https://www.framer.com/?utm_source=google&utm_medium=adwords&utm_campaign=22230540905_171781588221&gad_source=1&gclid=CjwKCAjwp8--BhBREiwAj7og1ws5kztS9e-c7Vd3Up2f4QxO_0HFrNvf5wdhEPe6UItcMTHi2CHmzxoCBakQAvD_BwE" },
+    { id: 18, title: "CSS3", icon: FaCss3Alt, link: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
+    { id: 19, title: "SASS", icon: FaSass, link: "https://sass-lang.com/" },
+    { id: 20, title: "HTML5", icon: FaHtml5, link: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
+    { id: 21, title: "Redux", icon: SiRedux, link: "https://redux.js.org/" },
+    { id: 22, title: "Vite", icon: SiVite, link: "https://vitejs.dev/" },
+    { id: 23, title: "Jira", icon: SiJira, link: "https://www.atlassian.com/software/jira" },
+    { id: 24, title: "WordPress", icon: FaWordpress, link: "https://wordpress.org/" },
 ];
 
 // Track hovered skill
