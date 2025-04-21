@@ -6,7 +6,7 @@ import { MdWavingHand, MdOutlineWavingHand } from "react-icons/md";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { IoHandRightOutline } from "react-icons/io5";
-import LetterGlitch from '../components/LetterGlitch'
+//import LetterGlitch from '../components/LetterGlitch'
 
 const handWaveAnimation = {
     rotate: [0, 15, 0], // Rotates 15 degrees back and forth

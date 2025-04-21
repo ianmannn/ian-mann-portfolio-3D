@@ -52,7 +52,7 @@ const projectList = [
     title: 'VerifyAI',
     logo: '/verifyailogo.png',
     description: 'AI Compliance Verification',
-    link: 'https://github.com/verifyai/VerifyAI',
+    link: 'https://verify-ai-cyan.vercel.app/',
   },
   {
     id: 3,
@@ -72,14 +72,14 @@ const projectList = [
 
 const Portfolio = () => {
   const experienceContainerRef = useRef(null);
-  const [rulerHeight, setRulerHeight] = useState(0);
+  // const [rulerHeight, setRulerHeight] = useState(0);
   const [projectsHeight, setProjectsHeight] = useState(0);
 
   const { updateCursorText } = useCursorContext();
 
   useEffect(() => {
     if (experienceContainerRef.current) {
-      setRulerHeight(experienceContainerRef.current.scrollHeight * 0.9);
+      // setRulerHeight(experienceContainerRef.current.scrollHeight * 0.9);
       setProjectsHeight(experienceContainerRef.current.height);
     }
   }, []);
@@ -102,12 +102,12 @@ const Portfolio = () => {
       </h2>
       <div className="section-portfolio-container flex flex-col lg:flex-row w-full p-6 gap-10 relative z-10">
         <div className="section-portfolio-left-container relative flex justify-center w-full lg:w-1/2">
-          <img
+          {/* <img
             src={ExperienceRuler}
             className="section-portfolio-left-experience-ruler absolute left-0 transform -translate-x-1/2 max-sm:mt-16 md:mt-18 lg:mt-18"
             style={{ height: rulerHeight ? `${rulerHeight}px` : 'auto' }}
             alt="Experience Ruler"
-          />
+          /> */}
           <div className="section-portfolio-left-container-full w-10/12">
             <div className="section-portfolio-left-experience-title flex justify-center text-text text-4xl mb-4 font-kanit">
               EXPERIENCE
