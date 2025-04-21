@@ -10,6 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
 @import "tailwindcss";
 
 
@@ -31,6 +32,7 @@
   --font-permanentmarker: "Permanent Market", cursive;
   --font-chewy: "Chewy", system-ui;
   --font-luckiestguy: "Luckiest Guy", cursive;
+  --font-specgothic: "Special Gothic Expanded One", sans-serif;
 
   --color-bg: #090909;
   --color-text: #E4E4E4;

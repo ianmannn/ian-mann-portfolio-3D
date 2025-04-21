@@ -83,32 +83,37 @@ const { updateCursorText } = useCursorContext();
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.4, duration: 0.6, ease: "easeOut" }}
                     viewport={{ once: true }}
-                    className="relative text-center text-text text-6xl font-permanentmarker font-bold"
+                    className="relative text-center text-text text-6xl font-specgothic font-bold"
                 >
                     ABOUT ME
                 </motion.h2>
             </div>
             
             <div className="section-aboutme-container flex w-full flex-col lg:flex-row items-center gap-20 my-20 ">  
-                <div className="section-aboutmeleft bg-primary w-81 h-130 rounded-3xl sm:w-96 sm:h-150">
-                    <Canvas camera={{ position: [0, 0, 5], fov: 45 }}>
-                        <ambientLight intensity={0.5} />
-                        <directionalLight position={[5, 5, 5]} />
+            <motion.div
+                className="section-aboutmeleft bg-primary w-81 h-130 rounded-3xl sm:w-96 sm:h-150"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.6, ease: "easeOut" }}
+                viewport={{ once: true }}
+                >
+                <Canvas camera={{ position: [0, 0, 5], fov: 50 }}>
+                    <ambientLight intensity={0.5} />
+                    <directionalLight position={[5, 5, 5]} />
 
-                        <Suspense fallback={<CanvasLoader />}>
-                            <Center>
-                            <DemoComputer />
-                            </Center>
-                        </Suspense>
+                    <Suspense fallback={<CanvasLoader />}>
+                    <Center>
+                        <DemoComputer />
+                    </Center>
+                    </Suspense>
 
-                        <OrbitControls
-                            enableZoom={false} // optional: lock zoom
-                            enablePan={false}  // optional: lock panning
-                            autoRotate={false} // optional: set true if you want idle spin
-                        />
-                    </Canvas>
-
-                </div>
+                    <OrbitControls
+                    enableZoom={false}
+                    enablePan={false}
+                    autoRotate={true}
+                    />
+                </Canvas>
+            </motion.div>
                 <div className="section-aboutme-right flex-1"> 
                     <motion.p 
                         initial={{ opacity: 0}}
