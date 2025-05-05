@@ -63,10 +63,10 @@ const projectList = [
   },
   {
     id: 4,
-    title: 'Surprise Project',
+    title: 'Cursor Craze',
     logo: SurpriseLogo,
-    description: 'Click to discover',
-    link: 'https://shattereddisk.github.io/rickroll/rickroll.mp4',
+    description: 'A Cursor Game',
+    link: 'https://cursorcraze.vercel.app/',
   },
 ];
 
