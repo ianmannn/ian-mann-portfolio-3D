@@ -8,6 +8,7 @@ import LunchBoxLogo from '../assets/lunchboxlogomedium.jpg';
 import SurpriseLogo from '../assets/surpriselogoblue.png';
 import { useCursorContext } from '../contexts/CursorContext';
 import LetterGlitch from '../components/LetterGlitch.jsx';
+import CursorGameLogo from '../../public/cursorgamelogo.jpg';
 
 const experienceList = [
   {
@@ -64,7 +65,7 @@ const projectList = [
   {
     id: 4,
     title: 'Cursor Craze',
-    logo: SurpriseLogo,
+    logo: ,
     description: 'A Cursor Game',
     link: 'https://cursorcraze.vercel.app/',
   },
