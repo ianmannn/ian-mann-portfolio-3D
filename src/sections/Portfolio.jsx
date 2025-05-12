@@ -8,7 +8,7 @@ import LunchBoxLogo from '../assets/lunchboxlogomedium.jpg';
 import SurpriseLogo from '../assets/surpriselogoblue.png';
 import { useCursorContext } from '../contexts/CursorContext';
 import LetterGlitch from '../components/LetterGlitch.jsx';
-import CursorGameLogo from '../../public/cursorgamelogo.jpg';
+import CursorGameLogo from '/cursorgamelogo.jpg';
 
 const experienceList = [
   {
@@ -65,7 +65,7 @@ const projectList = [
   {
     id: 4,
     title: 'Cursor Craze',
-    logo: ,
+    logo: CursorGameLogo,
     description: 'A Cursor Game',
     link: 'https://cursorcraze.vercel.app/',
   },
@@ -119,6 +119,7 @@ const Portfolio = () => {
                   key={experience.id}
                   href={experience.link}
                   target="_blank"
+                  rel="noopener noreferrer"
                   onMouseEnter={() => updateCursorText('CLICK ><')}
                   onMouseLeave={() => updateCursorText('SCROLL <>')}
                   className="bg-gradient-to-b from-white/10 to-white/7 border-[2px] border-gray6 rounded-md p-5 mt-5 flex flex-col items-start justify-start relative cursor-pointer hover:scale-105 hover:border-green-300 transition"
@@ -158,6 +159,8 @@ const Portfolio = () => {
               <a
                 key={project.id}
                 href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 onMouseEnter={() => updateCursorText('CLICK ><')}
                 onMouseLeave={() => updateCursorText('SCROLL <>')}
                 className="flex flex-col p-6 border-[2px] border-gray6 bg-gradient-to-b from-white/10 to-white/7  rounded-sm justify-center cursor-pointer  hover:border-blue-400 hover:scale-102 hover:shadow-none transition-transform w-full"

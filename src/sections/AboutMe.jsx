@@ -46,32 +46,32 @@ const { updateCursorText } = useCursorContext();
         {
             title: "VS Code",
             icon: vscodeIcon,
-            delay: 2.7,
+            delay: 2.3,
         },
         {
             title:"Figma",
             icon: figmaIcon,
-            delay: 2.9,
+            delay: 2.5,
         },
         {
             title: "Git",
             icon: gitIcon,
-            delay: 3.1,
+            delay: 2.7,
         },
         {
             title: "OpenAi",
             icon: openAIIcon,
-            delay: 3.3,
+            delay: 2.9,
         },
         {
             title: "Postman",
             icon: postmanIcon,
-            delay: 3.5,
+            delay: 3.1,
         },
         {
             title: "Docker",
             icon: dockerIcon,
-            delay: 3.7,
+            delay: 3.3,
         }
     ]
 
@@ -145,7 +145,7 @@ const { updateCursorText } = useCursorContext();
                     <motion.h4 
                         initial={{ opacity: 0}}
                         whileInView={{ opacity: 1}}
-                        transition={{ delay: 2.4, duration: 1,}}
+                        transition={{ delay: 2, duration: 1,}}
                         viewport={{ once: true }}
                         className="my-6 text-gray-700 font-Ovo dark:text-white/80">Tools I use:</motion.h4>
                     <ul className="flex items-center gap-3 sm:gap-5">
